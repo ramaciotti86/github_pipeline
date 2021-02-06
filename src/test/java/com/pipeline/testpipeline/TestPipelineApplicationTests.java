@@ -14,6 +14,7 @@ class TestPipelineApplicationTests {
 	@Test
 	void testSimple(){
 		Assertions.assertEquals(0, 1);
+		Assertions.assertEquals(0, 2);
 	}
 
 }
