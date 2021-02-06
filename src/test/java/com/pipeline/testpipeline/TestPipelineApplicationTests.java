@@ -11,9 +11,9 @@ class TestPipelineApplicationTests {
 	void contextLoads() {
 	}
 
-	@Test
+	/*@Test
 	void testSimple(){
 		Assertions.assertEquals(0, 1);
-	}
+	}*/
 
 }
