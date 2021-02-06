@@ -2,7 +2,7 @@ name: Development Branch
 on:
   push:
     branches-ignore:
-      - 'master'
+      #- 'master'
       - 'homologation'
       - 'release*'
 
