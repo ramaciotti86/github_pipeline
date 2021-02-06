@@ -1,6 +1,5 @@
 package com.pipeline.testpipeline;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -11,9 +10,9 @@ class TestPipelineApplicationTests {
 	void contextLoads() {
 	}
 
-	/*@Test
-	void testSimple(){
-		Assertions.assertEquals(0, 1);
-	}*/
+	@Test
+	public void main() {
+		TestPipelineApplication.main(new String[] {});
+	}
 
 }
