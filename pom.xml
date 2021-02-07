@@ -15,7 +15,7 @@
 	<description>Test project to test pipeline in Github</description>
 	<properties>
 		<java.version>1.8</java.version>
-		<code.coverage.exclusions>**/target/**</code.coverage.exclusions>
+		<code.coverage.exclusions>target/**</code.coverage.exclusions>
 	</properties>
 	<profiles>
 		<profile>
@@ -24,8 +24,7 @@
 				<sonar.sources>.</sonar.sources>
 				<sonar.inclusions>src/main/java/**,src/main/resources/**</sonar.inclusions>
 				<sonar.exclusions>${code.coverage.exclusions}</sonar.exclusions>
-				<!--<sonar.projectKey>${project.artifactId}</sonar.projectKey>
-				<sonar.coverage.jacoco.xmlReportPaths>/target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>-->
+				<sonar.projectKey>${project.artifactId}</sonar.projectKey>
 			</properties>
 			<activation>
 				<activeByDefault>false</activeByDefault>
