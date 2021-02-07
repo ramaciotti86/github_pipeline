@@ -81,13 +81,3 @@ jobs:
         run: mvn -B clean verify -Psonar -Dsonar.login=${{ secrets.SONAR_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-          
-      - name: 'Send SMS'
-        uses: nikitasavinov/messagebird-sms-action@v1
-        with:
-          originator: '+353830440910'
-          recipients: '+353830440910,+353871192581'
-          body: 'Message from Github: coverage = ${{ steps.jacoco.outputs.coverage }}'
-        env:
-          MESSAGEBIRD_API_KEY: ${{ secrets.MESSAGEBIRD_API_KEY }}
